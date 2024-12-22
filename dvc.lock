@@ -1,0 +1,8 @@
+schema: '2.0'
+stages:
+  create_features_and_base:
+    cmd: python clinker_predict/create_features_and_base_pipeline.py
+  configure_and_fit:
+    cmd: python clinker_predict/configure_and_fit_pipeline.py
+  predict:
+    cmd: python clinker_predict/predict_pipeline.py
